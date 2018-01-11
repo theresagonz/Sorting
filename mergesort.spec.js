@@ -1,3 +1,16 @@
+describe('Merge Sort', function(){
+    it('handles an empty array', function(){
+        expect( mergeSort([]) ).toEqual( [] );
+    });
+    it('handles a standard array', function(){
+        expect( mergeSort([1, 3, 5, 7, 2, 4, 6])).toEqual([1, 2, 3, 4, 5, 6, 7]);
+    });
+    it('handles an array already in order', function(){
+        expect( mergeSort([1, 3, 5, 7, 9, 11, 13, 15, 17, 19])).toEqual([1, 3, 5, 7, 9, 11, 13, 15, 17, 19]);
+    })
+});
+
+
 console.log("Mergesort tests");
 split([1, 2, 3, 4, 5, 6, 7]);
 console.log(split([1,2]));

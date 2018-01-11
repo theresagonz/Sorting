@@ -32,7 +32,7 @@ function merge(array1, array2) {
 function mergeSort(array) {
     var splitArrays = split(array);
     var output = [];
-    if (array.length == 1) {
+    if (array.length <= 1) {
         return array;
     }
     else {
